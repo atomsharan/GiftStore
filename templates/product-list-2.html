@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'imgs/template/favicon.svg' %}">
+    <link href="{% static 'css/style.css?v=1.0.0' %}" rel="stylesheet">
+    <title>Product List 2 - Kid Fashion Store HTML Template</title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="page-loading text-center"><img class="d-inline-block" src="{% static 'imgs/template/favicon.svg' %}" alt="Kidify">
+            <div class="page-loading-inner">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header sticky-bar header-style-1">
+      <div class="box-top-header header-style-3 bg-3">
+        <div class="container">
+          <div class="top-header">
+            <div class="head-support">
+              <div class="head-socials"><a href="#">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9047 12.75H13.4437V20.1H10.1625V12.75H7.47187V9.73125H10.1625V7.40156C10.1625 4.77656 11.7375 3.3 14.1328 3.3C15.2813 3.3 16.4953 3.52969 16.4953 3.52969V6.12187H15.15C13.8375 6.12187 13.4437 6.90937 13.4437 7.7625V9.73125H16.3641L15.9047 12.75Z" fill="#294646"></path>
+                  </svg></a><a href="#">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6609 8.2875C18.6609 8.45156 18.6609 8.58281 18.6609 8.74687C18.6609 13.3078 15.2156 18.525 8.88281 18.525C6.91406 18.525 5.10937 17.9672 3.6 16.9828C3.8625 17.0156 4.125 17.0484 4.42031 17.0484C6.02812 17.0484 7.50469 16.4906 8.68594 15.5719C7.17656 15.5391 5.89687 14.5547 5.47031 13.1766C5.7 13.2094 5.89687 13.2422 6.12656 13.2422C6.42187 13.2422 6.75 13.1766 7.0125 13.1109C5.4375 12.7828 4.25625 11.4047 4.25625 9.73125V9.69844C4.71562 9.96094 5.27344 10.0922 5.83125 10.125C4.87969 9.50156 4.28906 8.45156 4.28906 7.27031C4.28906 6.61406 4.45312 6.02344 4.74844 5.53125C6.45469 7.59844 9.01406 8.97656 11.8687 9.14062C11.8031 8.87812 11.7703 8.61562 11.7703 8.35312C11.7703 6.45 13.3125 4.90781 15.2156 4.90781C16.2 4.90781 17.0859 5.30156 17.7422 5.99062C18.4969 5.82656 19.2516 5.53125 19.9078 5.1375C19.6453 5.95781 19.1203 6.61406 18.3984 7.04062C19.0875 6.975 19.7766 6.77812 20.3672 6.51562C19.9078 7.20469 19.3172 7.79531 18.6609 8.2875Z" fill="#294646"></path>
+                  </svg></a><a href="#">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.1375 11.7C20.1375 16.1953 16.4953 19.8375 12 19.8375C11.1469 19.8375 10.3266 19.7391 9.57187 19.4766C9.9 18.9516 10.3922 18.0656 10.5891 17.3437C10.6875 16.9828 11.0812 15.4078 11.0812 15.4078C11.3437 15.9328 12.1312 16.3594 12.9516 16.3594C15.4125 16.3594 17.1844 14.0953 17.1844 11.3062C17.1844 8.61562 14.9859 6.58125 12.1641 6.58125C8.65312 6.58125 6.78281 8.94375 6.78281 11.5031C6.78281 12.7172 7.40625 14.1937 8.42344 14.6859C8.5875 14.7516 8.68594 14.7187 8.71875 14.5547C8.71875 14.4562 8.88281 13.8984 8.94844 13.6359C8.94844 13.5703 8.94844 13.4719 8.88281 13.4062C8.55469 13.0125 8.29219 12.2578 8.29219 11.5359C8.29219 9.76406 9.6375 8.025 11.9672 8.025C13.9359 8.025 15.3469 9.37031 15.3469 11.3391C15.3469 13.5375 14.2312 15.0469 12.7875 15.0469C12 15.0469 11.4094 14.3906 11.5734 13.6031C11.8031 12.6187 12.2625 11.5687 12.2625 10.8797C12.2625 10.2562 11.9344 9.73125 11.2453 9.73125C10.425 9.73125 9.76875 10.5844 9.76875 11.7C9.76875 12.4219 9.99844 12.9141 9.99844 12.9141C9.99844 12.9141 9.21094 16.3266 9.04687 16.95C8.88281 17.6719 8.94844 18.6563 9.01406 19.2797C5.99531 18.0984 3.8625 15.1781 3.8625 11.7C3.8625 7.20469 7.50469 3.5625 12 3.5625C16.4953 3.5625 20.1375 7.20469 20.1375 11.7Z" fill="#294646"></path>
+                  </svg></a></div><a class="font-md neutral-900" href="#">(+01) - 2345 - 6789</a>
+            </div>
+            <div class="header-top-info">
+              <p class="neutrl-0 font-sm">FREE SHIPPING & SHOPPER ON ORDERS ABOVE €75 - IN STORE PICKUPS & RETURNS</p>
+            </div>
+            <div class="lang-currency">
+              <div class="dropdown mr-10">
+                <button class="btn btn-line-bottom dropdown-toggle" id="dropdownLangHead" type="button" data-bs-toggle="dropdown" aria-expanded="false">EN</button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLangHead">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">JP</a></li>
+                  <li><a class="dropdown-item" href="#">KR</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-line-bottom dropdown-toggle" id="dropdownCurrencyHead" type="button" data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownCurrencyHead">
+                  <li><a class="dropdown-item" href="#">USD</a></li>
+                  <li><a class="dropdown-item" href="#">EURO</a></li>
+                  <li><a class="dropdown-item" href="#">AUD</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-header">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="kidify" src="{% static 'imgs/template/logo.svg' %}"></a></div>
+          <div class="header-menu">
+            <div class="header-nav">
+              <nav class="nav-main-menu d-none d-xl-block">
+                <ul class="main-menu">
+                  <li class="has-mega-menu"><a class="active" href="index.html">Home</a>
+                    <div class="sub-menu">
+                      <div class="menu-inner">
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Homepage</h6><a href="index.html">Homepage 1</a><a href="index-2.html">Homepage 2</a><a href="index-3.html">Homepage 3</a><a href="index-4.html">Homepage 4</a><a href="index-5.html">Homepage 5</a>
+                        </div>
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Toys</h6><a href="product-list.html">Building blocks</a><a href="product-list.html">Dolls & plushies</a><a href="product-list.html">Action figures</a><a href="product-list.html">Arts & crafts</a><a href="product-list.html">Educational puzzles</a><a href="product-list.html">Outdoor toys</a><a href="product-list.html">Board games</a><a href="product-list.html">Musical toys</a>
+                        </div>
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Accessories</h6><a href="product-list.html">Jewelry & watches</a><a href="product-list.html">Bags & purses</a><a href="product-list.html">Hats & caps</a><a href="product-list.html">Scarves & wraps</a><a href="product-list.html">Belts & buckles</a><a href="product-list.html">Sunglasses & eyewear</a><a href="#">Gloves & mittens</a><a href="product-list.html">Hair accessories</a>
+                        </div>
+                        <div class="col-menu-2"><img src="{% static 'imgs/template/megamenu.png' %}" alt="kidify"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="has-mega-menu"><a href="product-list.html">Shop</a>
+                    <div class="sub-menu">
+                      <div class="menu-inner">
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Shop layouts</h6><a href="product-list.html">Product Listing 1</a><a href="product-list-2.html">Product Listing 2</a><a href="product-list-3.html">Product Listing 3</a><a href="product-single.html">Product Single 1</a><a href="product-single-2.html">Product Single 2</a><a href="product-single-3.html">Product Single 3</a><a href="cart.html">Shop Cart</a><a href="checkout.html">Check Out</a><a href="compare.html">Product Compare</a>
+                        </div>
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Fashion</h6><a href="product-list.html">Womens</a><a href="product-list-2.html">Boys' Clothing</a><a href="product-list.html">Baby Care</a><a href="product-list.html">Safety Equipment</a><a href="product-list.html">Activity & Gear</a><a href="product-list.html">Baby Shoes</a><a href="product-list.html">Children's Shoes</a><a href="product-list.html">Family Outfits</a>
+                        </div>
+                        <div class="col-menu">
+                          <h6 class="font-lg-bold mb-10">Accessories</h6><a href="product-list.html">Jewelry & watches</a><a href="product-list.html">Bags & purses</a><a href="product-list.html">Hats & caps</a><a href="product-list.html">Scarves & wraps</a><a href="product-list.html">Belts & buckles</a><a href="product-list.html">Sunglasses & eyewear</a><a href="product-list.html">Gloves & mittens</a><a href="product-list.html">Hair accessories</a>
+                        </div>
+                        <div class="col-menu-2"><img src="{% static 'imgs/template/megamenu.png' %}" alt="kidify"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="has-children"><a href="about.html">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="compare.html">Products compare</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                      <li><a href="404.html">Error 404</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog List</a></li>
+                      <li><a href="blog-2.html">Blog List 2</a></li>
+                      <li><a href="blog-3.html">Blog List 3</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+            </div>
+          </div>
+          <div class="header-account"><a class="account-icon search" href="#">
+              <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_91_73)">
+                  <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_91_73">
+                    <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                  </clippath>
+                </defs>
+              </svg></a><a class="account-icon account" href="#">
+              <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_116_451)">
+                  <path d="M6 24C6 21.8783 6.84285 19.8434 8.34315 18.3431C9.84344 16.8429 11.8783 16 14 16C16.1217 16 18.1566 16.8429 19.6569 18.3431C21.1571 19.8434 22 21.8783 22 24H20C20 22.4087 19.3679 20.8826 18.2426 19.7574C17.1174 18.6321 15.5913 18 14 18C12.4087 18 10.8826 18.6321 9.75736 19.7574C8.63214 20.8826 8 22.4087 8 24H6ZM14 15C10.685 15 8 12.315 8 9C8 5.685 10.685 3 14 3C17.315 3 20 5.685 20 9C20 12.315 17.315 15 14 15ZM14 13C16.21 13 18 11.21 18 9C18 6.79 16.21 5 14 5C11.79 5 10 6.79 10 9C10 11.21 11.79 13 14 13Z"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_116_451">
+                    <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                  </clippath>
+                </defs>
+              </svg></a><a class="account-icon wishlist" href="compare.html"><span class="number-tag">3</span>
+              <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_116_452)">
+                  <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_116_452">
+                    <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                  </clippath>
+                </defs>
+              </svg></a><a class="account-icon cart" href="#"><span class="number-tag">5</span>
+              <svg width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_116_450)">
+                  <path d="M9 10V8C9 6.67392 9.52678 5.40215 10.4645 4.46447C11.4021 3.52678 12.6739 3 14 3C15.3261 3 16.5979 3.52678 17.5355 4.46447C18.4732 5.40215 19 6.67392 19 8V10H22C22.2652 10 22.5196 10.1054 22.7071 10.2929C22.8946 10.4804 23 10.7348 23 11V23C23 23.2652 22.8946 23.5196 22.7071 23.7071C22.5196 23.8946 22.2652 24 22 24H6C5.73478 24 5.48043 23.8946 5.29289 23.7071C5.10536 23.5196 5 23.2652 5 23V11C5 10.7348 5.10536 10.4804 5.29289 10.2929C5.48043 10.1054 5.73478 10 6 10H9ZM9 12H7V22H21V12H19V14H17V12H11V14H9V12ZM11 10H17V8C17 7.20435 16.6839 6.44129 16.1213 5.87868C15.5587 5.31607 14.7956 5 14 5C13.2044 5 12.4413 5.31607 11.8787 5.87868C11.3161 6.44129 11 7.20435 11 8V10Z"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_116_450">
+                    <rect width="24" height="24" transform="translate(2 2)"></rect>
+                  </clippath>
+                </defs>
+              </svg></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+            <div class="mobile-menu-head">
+            <div class="box-head-1"><a class="logo-menu" href="index.html"><img alt="kidify" src="{% static 'imgs/template/logo.svg' %}"></a><a class="close-mobile" href="#"><img src="{% static 'imgs/template/icons/close.svg' %}" alt="kidify"></a></div>
+            <div class="box-head-2"><a class="back-mobile" href="#"><img src="{% static 'imgs/template/icons/back.svg' %}" alt="kidify"></a></div>
+            </div>
+          <div class="perfect-scroll">
+            <div class="mobile-menu-wrap mobile-header-border">
+              <nav>
+                <ul class="mobile-menu font-heading">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="index.html">Homepage - 1</a></li>
+                      <li><a href="index-2.html">Homepage - 2</a></li>
+                      <li><a href="index-3.html">Homepage - 3</a></li>
+                      <li><a href="index-4.html">Homepage - 4</a></li>
+                      <li><a href="index-5.html">Homepage - 5</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="product-list.html">Shop</a>
+                    <ul class="sub-menu">
+                      <li><a href="product-list.html">Product List</a></li>
+                      <li><a href="product-list-2.html">Product List 2</a></li>
+                      <li><a href="product-list-3.html">Product List 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="fleet-list.html">Products</a>
+                    <ul class="sub-menu">
+                      <li><a href="product-single.html">Product Single</a></li>
+                      <li><a href="product-single-2.html">Product Single 2</a></li>
+                      <li><a href="product-single-3.html">Product Single 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="about.html">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                      <li><a href="compare.html">Products compare</a></li>
+                      <li><a href="404.html">Error 404</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog List</a></li>
+                      <li><a href="blog-2.html">Blog List 2</a></li>
+                      <li><a href="blog-3.html">Blog List 3</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="section block-shop-head-2">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href="#">Home </a></li>
+              <li><a href="#">Shop</a></li>
+              <li> <a href="#">Boys Clothing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="section content-products">
+        <div class="container">
+          <div class="box-top-product-list">
+            <div class="row align-items-start">
+              <div class="col-lg-5 mb-30">
+                <h2 class="font-4xl mb-20">Baby Collections</h2>
+                <p class="font-md">Crafted from high-quality materials, our clothes are durable and provide utmost comfort to your baby. Discover the perfect outfit for your baby in our collection, whether it's for everyday wear or a special occasion.</p>
+              </div>
+              <div class="col-lg-7 mb-30">
+                <ul class="list-category-5-col">
+                  <li>
+                    <div class="cardCategory">
+                        <div class="cardImage"><a href="#"><img src="{% static 'imgs/page/homepage3/cat.png' %}" alt="kidify"></a></div>
+                      <div class="cardInfo"><a href="#">Baby Tees</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cardCategory">
+                        <div class="cardImage"><a href="#"><img src="{% static 'imgs/page/homepage3/cat2.png' %}" alt="kidify"></a></div>
+                      <div class="cardInfo"><a href="#">Sleepwear</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cardCategory">
+                        <div class="cardImage"><a href="#"><img src="{% static 'imgs/page/homepage3/cat3.png' %}" alt="kidify"></a></div>
+                      <div class="cardInfo"><a href="#">Hoodies</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cardCategory">
+                        <div class="cardImage"><a href="#"><img src="{% static 'imgs/page/homepage3/cat4.png' %}" alt="kidify"></a></div>
+                      <div class="cardInfo"><a href="#">Shoes</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cardCategory">
+                        <div class="cardImage"><a href="#"><img src="{% static 'imgs/page/homepage3/cat5.png' %}" alt="kidify"></a></div>
+                      <div class="cardInfo"><a href="#">Cribs</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                      <div class="cardProductDeal">
+                        <div class="cardImage">
+                            <label class="lbl-hot">hot</label><a href="product-single.html"><img src="{% static 'imgs/page/homepage2/product4.png' %}" alt="kidify"></a>
+                          <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                              <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                              </svg></a><a class="btn" href="#">
+                              <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              </svg></a><a class="btn" href="#">
+                              <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                              </svg></a></div>
+                        </div>
+                        <div class="cardInfo"><a href="product-single.html">
+                            <h6 class="font-md-bold cardTitle">Baby Bear Ears Beanie</h6></a>
+                          <div class="box-between">
+                            <p class="font-lg cardPrice">$34.00</p>
+                            <div class="rating"><img src="{% static 'imgs/template/icons/star.svg' %}" alt="kidify"><img src="{% static 'imgs/template/icons/star.svg' %}" alt="kidify"><img src="{% static 'imgs/template/icons/star.svg' %}" alt="kidify"><img src="{% static 'imgs/template/icons/star.svg' %}" alt="kidify"><img src="{% static 'imgs/template/icons/star.svg' %}" alt="kidify"></div>
+                          </div>
+                          <p class="font-lg neutral-500 cardDesc">As the fashion industry continues to evolve, children's fashion is no exception</p>
+                          <div class="box-count box-count-square box-count-circle">
+                            <div class="deals-countdown" data-countdown="2023/12/25 00:00:00"></div>
+                          </div>
+                          <div class="mt-20">
+                            <div class="button-select"><a class="btn btn-add-cart" href="product-single.html">Add to Cart</a></div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-lg-6">
+                      <div class="cardProductDeal">
+                        <div class="cardImage">
+                            <label class="lbl-hot">hot</label><a href="product-single.html"><img src="{% static 'imgs/page/homepage2/product3.png' %}" alt="kidify"></a>
+                          <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                              <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                              </svg></a><a class="btn" href="#">
+                              <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              </svg></a><a class="btn" href="#">
+                              <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                              </svg></a></div>
+                        </div>
+                        <div class="cardInfo"><a href="product-single.html">
+                            <h6 class="font-md-bold cardTitle">Little Lumberjack Flannel</h6></a>
+                          <div class="box-between">
+                            <p class="font-lg cardPrice">$48.00</p>
+                            <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"></div>
+                          </div>
+                          <p class="font-lg neutral-500 cardDesc">As the fashion industry continues to evolve, children's fashion is no exception</p>
+                          <div class="box-count box-count-square box-count-circle">
+                            <div class="deals-countdown" data-countdown="2023/12/25 00:00:00"></div>
+                          </div>
+                          <div class="mt-20">
+                            <div class="button-select"><a class="btn btn-add-cart" href="product-single.html">Add to Cart</a></div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-9 order-lg-last">
+              <div class="box-filter-top"> 
+                <div class="number-product"> 
+                  <p class="body-p2 neutral-medium-dark">Showing 9 of 18 products</p>
+                </div>
+                <div class="box-sort"> 
+                  <div class="box-sortby d-flex align-items-center">
+                    <div class="dropdown dropdown-sort">
+                      <button class="btn dropdown-toggle" id="dropdownSort2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Latest products</button>
+                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort2" style="margin: 0px;">
+                        <li><a class="dropdown-item active" href="#">Default Sorting</a></li>
+                        <li><a class="dropdown-item" href="#">Oldest products</a></li>
+                        <li><a class="dropdown-item" href="#">Latest products </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-sortby d-flex align-items-center">
+                    <div class="dropdown dropdown-sort">
+                      <button class="btn dropdown-toggle" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">30 items</button>
+                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
+                        <li><a class="dropdown-item active" href="#">30 items</a></li>
+                        <li><a class="dropdown-item" href="#">50 items</a></li>
+                        <li><a class="dropdown-item" href="#">100 items </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-view-style"> <a class="view-type view-grid active" href="#"></a><a class="view-type view-list" href="#"></a></div>
+                </div>
+              </div>
+              <div class="box-product-lists">
+                <div class="row">
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product1.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product2.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product2.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product3.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product3.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product1.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product4.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product5.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product5.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product4.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product6.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product7.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product7.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product6.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                                <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="{% static 'imgs/page/homepage1/product8.png' %}" alt="kidify"><img class="imageHover" src="{% static 'imgs/page/homepage1/product9.png' %}" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                              <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product9.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product8.png" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                              <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product7.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product6.png" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                              <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product8.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product9.png" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                          <div class="cardProduct wow fadeInUp">
+                            <div class="cardImage">
+                              <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product9.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product8.png" alt="kidify"></a>
+                              <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                              <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                                  </svg></a><a class="btn" href="#">
+                                  <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                  </svg></a></div>
+                            </div>
+                            <div class="cardInfo"><a href="product-single.html">
+                                <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                              <p class="font-lg cardDesc">$16.00</p>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="box-pagination">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link page-prev" href="#">
+                      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"></path>
+                      </svg></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">10</a></li>
+                  <li class="page-item"><a class="page-link page-next" href="#">
+                      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                      </svg></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3 order-lg-first">
+              <div class="sidebar-left">
+                <div class="box-filters-sidebar">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                      <h5 class="font-3xl-bold mt-5">Filter</h5>
+                      <div class="block-filter">
+                        <h6 class="item-collapse">Categories</h6>
+                        <div class="box-collapse">
+                          <ul class="list-filter-checkbox">
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Womens</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Boys' Clothing</span><span class="checkmark"></span>
+                              </label><span class="number-item">125</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Baby Care</span><span class="checkmark"></span>
+                              </label><span class="number-item">312</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Safety Equipment</span><span class="checkmark"></span>
+                              </label><span class="number-item">325</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Activity & Gear</span><span class="checkmark"></span>
+                              </label><span class="number-item">458</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Baby Shoes</span><span class="checkmark"></span>
+                              </label><span class="number-item">63</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Children's Shoes</span><span class="checkmark"></span>
+                              </label><span class="number-item">985</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Family Outfits</span><span class="checkmark"></span>
+                              </label><span class="number-item">56</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                      <div class="block-filter">
+                        <h6 class="title-filter">Price</h6>
+                        <div class="box-collapse">
+                          <div class="box-slider-range mt-20 mb-25">
+                            <div class="row mb-20">
+                              <div class="col-sm-12">
+                                <div id="slider-range"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <label class="lb-slider font-sm neutral-500 mr-5">Price Range:</label><span class="min-value-money font-sm neutral-900"></span>
+                                <label class="lb-slider font-sm neutral-900"></label>-<span class="max-value-money font-sm neutral-900"></span>
+                              </div>
+                              <div class="col-lg-12">
+                                <input class="form-control min-value" type="hidden" name="min-value" value="">
+                                <input class="form-control max-value" type="hidden" name="max-value" value="">
+                              </div>
+                            </div>
+                          </div>
+                          <ul class="list-filter-checkbox">
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">$100 - $200</span><span class="checkmark"></span>
+                              </label><span class="number-item">12</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">$200 - $400</span><span class="checkmark"></span>
+                              </label><span class="number-item">24</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">$400 - $600</span><span class="checkmark"></span>
+                              </label><span class="number-item">54</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">$600 - $800</span><span class="checkmark"></span>
+                              </label><span class="number-item">78</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Over $1000</span><span class="checkmark"></span>
+                              </label><span class="number-item">125</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                      <div class="block-filter">
+                        <h6 class="item-collapse">Size</h6>
+                        <div class="box-collapse">
+                          <div class="block-size">
+                            <div class="list-sizes"><span class="item-size">XS</span><span class="item-size active">S</span><span class="item-size">M</span><span class="item-size">XL</span><span class="item-size">XXL</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                      <div class="block-filter">
+                        <h6 class="item-collapse">Colors</h6>
+                        <div class="box-collapse">
+                          <ul class="list-color">
+                            <li class="active"><span class="box-circle-color"><a class="color-red active" href="#"></a></span><span class="font-xs">Red</span></li>
+                            <li><span class="box-circle-color"><a class="color-green" href="#"></a></span><span class="font-xs">Green</span></li>
+                            <li><span class="box-circle-color"><a class="color-orange" href="#"></a></span><span class="font-xs">Orange</span></li>
+                            <li><span class="box-circle-color"><a class="color-yellow" href="#"></a></span><span class="font-xs">Yellow</span></li>
+                            <li><span class="box-circle-color"><a class="color-blue" href="#"></a></span><span class="font-xs">Blue</span></li>
+                            <li><span class="box-circle-color"><a class="color-gray" href="#"></a></span><span class="font-xs">Gray</span></li>
+                            <li><span class="box-circle-color"><a class="color-brown" href="#"></a></span><span class="font-xs">Brown</span></li>
+                            <li><span class="box-circle-color"><a class="color-cyan" href="#"></a></span><span class="font-xs">Cyan</span></li>
+                            <li><span class="box-circle-color"><a class="color-cyan-2" href="#"></a></span><span class="font-xs">Cyan 2</span></li>
+                            <li><span class="box-circle-color"><a class="color-purple" href="#"></a></span><span class="font-xs">Purple</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                      <div class="block-filter">
+                        <h6 class="item-collapse">Brand</h6>
+                        <div class="box-collapse">
+                          <ul class="list-filter-checkbox">
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Seraphine</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Monica + Andy</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Maisonette</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Pink Chicken</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                            <li>
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Hanna Andersson</span><span class="checkmark"></span>
+                              </label><span class="number-item">136</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                      <div class="block-filter">
+                        <h6 class="item-collapse">Tags</h6>
+                        <div class="box-collapse"><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Top Rated</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Outfits</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html#">T-Shirts</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Boy Shirts</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Boy Tanks</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Shoes</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Boys Denim</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Toddler Boys</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Boy Swimwear</a><a class="btn btn-tag mr-10 mb-10" href="product-list-2.html">Boys Interior</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section block-may-also-like">
+        <div class="container">
+          <div class="text-center mb-35">
+            <h4 class="text-uppercase brand-1 brush-bg mb-15">Recently Viewed Products</h4>
+            <p class="font-lg neutral-500">Add these amazing products to your cart</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                    <div class="cardProduct wow fadeInUp">
+                      <div class="cardImage">
+                        <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product1.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product2.png" alt="kidify"></a>
+                        <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                        <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                            </svg></a></div>
+                      </div>
+                      <div class="cardInfo"><a href="product-single.html">
+                          <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                        <p class="font-lg cardDesc">$16.00</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="cardProduct wow fadeInUp">
+                      <div class="cardImage">
+                        <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product2.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product3.png" alt="kidify"></a>
+                        <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                        <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                            </svg></a></div>
+                      </div>
+                      <div class="cardInfo"><a href="product-single.html">
+                          <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                        <p class="font-lg cardDesc">$16.00</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="cardProduct wow fadeInUp">
+                      <div class="cardImage">
+                        <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product3.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product1.png" alt="kidify"></a>
+                        <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                        <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                            </svg></a></div>
+                      </div>
+                      <div class="cardInfo"><a href="product-single.html">
+                          <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                        <p class="font-lg cardDesc">$16.00</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="cardProduct wow fadeInUp">
+                      <div class="cardImage">
+                        <label class="lbl-hot">hot</label><a href="product-single.html"><img class="imageMain" src="assets/imgs/page/homepage1/product4.png" alt="kidify"><img class="imageHover" src="assets/imgs/page/homepage1/product5.png" alt="kidify"></a>
+                        <div class="button-select"><a href="product-single.html">Add to Cart</a></div>
+                        <div class="box-quick-button"><a class="btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.25 3.75L15.75 5.25M15.75 5.25L14.25 6.75M15.75 5.25H5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M3.75 14.25L2.25 12.75M2.25 12.75L3.75 11.25M2.25 12.75L12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M2.25 8.25C2.25 6.59315 3.59315 5.25 5.25 5.25" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                              <path d="M15.75 9.75C15.75 11.4069 14.4069 12.75 12.75 12.75" stroke="#294646" stroke-width="1.5" stroke-linecap="round"></path>
+                            </svg></a><a class="btn" href="#">
+                            <svg class="d-inline-flex align-items-center justify-content-center" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                            </svg></a></div>
+                      </div>
+                      <div class="cardInfo"><a href="product-single.html">
+                          <h6 class="font-md-bold cardTitle">Lace Shirt Cut II</h6></a>
+                        <p class="font-lg cardDesc">$16.00</p>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section block-section-8">
+        <div class="container">
+          <div class="text-center">
+            <div class="top-head justify-content-center">
+              <h4 class="text-uppercase brand-1 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Popular brands</h4>
+            </div>
+          </div>
+          <div class="text-center box-logos wow animate__animated animate__fadeIn" data-wow-delay=".0s"><img src="assets/imgs/slider/logo/logo-1.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-2.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-3.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-4.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-5.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-6.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-7.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-8.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-9.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-10.png" alt="kidify"><img src="assets/imgs/slider/logo/logo-11.png" alt="kidify"></div>
+        </div>
+      </section>
+      <div class="section block-section block-section-instagram-5"> 
+        <div class="container"> 
+          <div class="top-head top-head-abs justify-content-center"> 
+            <p class="font-md-bold text-uppercase brand-1 wow fadeInDown">FOLLOW US ON INSTAGRAM</p><a class="kidify-icon" href="#">kidify.com</a>
+          </div>
+        </div>
+        <div class="box-gallery-instagram"> 
+          <div class="box-gallery-instagram-inner">
+            <div class="gallery-item wow fadeInLeft"><img src="assets/imgs/page/homepage1/instagram6.png" alt="kidify"></div>
+            <div class="gallery-item wow fadeInUp"><img src="assets/imgs/page/homepage1/instagram.png" alt="kidify"></div>
+            <div class="gallery-item wow fadeInUp"><img src="assets/imgs/page/homepage1/instagram2.png" alt="kidify"></div>
+            <div class="gallery-item wow fadeInUp"><img src="assets/imgs/page/homepage1/instagram3.png" alt="kidify"></div>
+            <div class="gallery-item wow fadeInRight"><img src="assets/imgs/page/homepage1/instagram4.png" alt="kidify"></div>
+            <div class="gallery-item wow fadeInRight"><img src="assets/imgs/page/homepage1/instagram5.png" alt="kidify"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="box-newsletter-wrapper">
+          <div class="box-newsletter-inner">
+            <div class="modal-dialog">
+              <div class="modal-content"><a class="btn-close-popup" type="button" data-bs-dismiss="modal" aria-label="Close">
+                  <svg class="icon-16 d-inline-flex align-items-center justify-content-center" fill="#111111" stroke="#111111" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg></a>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-6 box-images-product-left">
+                      <div class="detail-gallery">
+                        <div class="box-main-gallery"><a class="zoom-image glightbox" href="assets/imgs/page/product/img-2.png"></a>
+                          <div class="product-image-slider">
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-2.png"><img src="assets/imgs/page/product/img-2.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-3.png"><img src="assets/imgs/page/product/img-3.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-4.png"><img src="assets/imgs/page/product/img-4.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-5.png"><img src="assets/imgs/page/product/img-5.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-6.png"><img src="assets/imgs/page/product/img-6.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img.png"><img src="assets/imgs/page/product/img.png" alt="kidify"></a></figure>
+                            <figure class="border-radius-10"><a class="glightbox" href="assets/imgs/page/product/img-5.png"><img src="assets/imgs/page/product/img-5.png" alt="kidify"></a></figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 box-images-product-middle">
+                      <div class="box-product-info">
+                        <label class="flash-sale-red">Extra 2% off</label>
+                        <h2 class="font-2xl-bold">Autumn Winter Girls Kids Pants Plus Velvet Children's Leggings Cotton</h2>
+                        <div class="block-rating"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><span class="font-md neutral-500">(14 Reviews - 25 Orders)</span></div>
+                        <div class="block-price"><span class="price-main">$15.00</span><span class="price-line">$25.00</span></div>
+                        <div class="block-color"><span>Color:</span>
+                          <ul class="list-color">
+                            <li class="active"><span class="box-circle-color"><a class="color-red active" href="#"></a></span></li>
+                            <li><span class="box-circle-color"><a class="color-green" href="#"></a></span></li>
+                            <li><span class="box-circle-color"><a class="color-orange" href="#"></a></span></li>
+                            <li><span class="box-circle-color"><a class="color-yellow" href="#"></a></span></li>
+                            <li><span class="box-circle-color"><a class="color-blue" href="#"></a></span></li>
+                            <li><span class="box-circle-color"><a class="color-gray" href="#"></a></span></li>
+                          </ul>
+                        </div>
+                        <div class="block-size"><span>Size:</span>
+                          <div class="box-list-sizes">
+                            <div class="list-sizes"><span class="item-size out-stock">XS</span><span class="item-size active">S</span><span class="item-size">M</span><span class="item-size">XL</span></div><a class="font-sm link-underline" href="#">Size Guide</a>
+                          </div>
+                        </div>
+                        <div class="block-quantity">
+                          <div class="font-sm neutral-500 mb-15">Quantity</div>
+                        </div>
+                        <div class="box-form-cart">
+                          <div class="form-cart"><span class="minus"></span>
+                            <input class="form-control" type="text" value="1"><span class="plus"></span>
+                          </div><a class="btn btn-brand-1-xl" href="#">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".0s">
+              <h5 class="neutral-900 text-uppercase mb-30">CONTACT</h5>
+              <p class="neutral-900 font-lg desc-company">Monday to Friday 8 a.m - 5 p.m</p>
+              <p class="neutral-900 font-lg phone-footer">+01 456 789</p>
+              <p class="neutral-900 font-lg phone-footer">+01 567 890</p>
+              <p class="neutral-900 font-lg email-footer">contact@kidify.com</p>
+            </div>
+            <div class="col-lg-9 mb-30">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+                  <h5 class="neutral-900 text-uppercase mb-30">Company</h5>
+                  <ul class="menu-footer">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Our Experts</a></li>
+                    <li><a href="#">Services & Price</a></li>
+                    <li><a href="blog-2.html">Latest News</a></li>
+                    <li><a href="#">Support Center</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+                  <h5 class="neutral-900 text-uppercase mb-30">Customers</h5>
+                  <ul class="menu-footer">
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="#">Payment & Tax</a></li>
+                    <li><a href="#">Bonus Point</a></li>
+                    <li><a href="#">Supply Chain</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                  <h5 class="neutral-900 text-uppercase mb-30">SUPPORT</h5>
+                  <ul class="menu-footer">
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">How To Order</a></li>
+                    <li><a href="#">How To Track</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+                  <h5 class="neutral-900 text-uppercase mb-30">social</h5>
+                  <ul class="menu-footer">
+                    <li><a class="facebook" href="#">Facebook</a></li>
+                    <li><a class="twitter" href="#">Twitter</a></li>
+                    <li><a class="instagram" href="#">Instagram</a></li>
+                    <li><a class="pinterest" href="#">Pinterest</a></li>
+                    <li><a class="youtube" href="#">Youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="container">
+          <div class="footer-bottom">
+            <div class="row align-items-center">
+              <div class="col-lg-3 col-md-12 text-center text-lg-start mb-20 wow animate__animated animate__fadeIn" data-wow-delay=".0s"><a href="index.html"><img src="assets/imgs/template/logo-footer.svg" alt="kidify"></a></div>
+              <div class="col-lg-6 col-md-12 text-center mb-20 wow animate__animated animate__fadeIn" data-wow-delay=".0s"><span class="body-p1 neutral-900 mr-5">©2023</span><a href="#">Kidify</a>. All rights reserved</div>
+              <div class="col-lg-3 col-md-12 text-center text-lg-end mb-20 wow animate__animated animate__fadeIn" data-wow-delay=".0s">
+                <div class="d-flex justify-content-center justify-content-lg-end align-items-center box-all-payments">
+                  <div class="d-inline-block box-payments"><img src="assets/imgs/template/icons/mastercard.svg" alt="kidify"><img src="assets/imgs/template/icons/googlepay.svg" alt="kidify"><img src="assets/imgs/template/icons/payoneer.svg" alt="kidify"><img src="assets/imgs/template/icons/applepay.svg" alt="kidify"><img src="assets/imgs/template/icons/paypal.svg" alt="kidify"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="box-popup-search perfect-scrollbar">
+      <div class="box-search-overlay"></div>
+      <div class="box-search-wrapper"><a class="btn-close-popup" href="#">
+          <svg class="icon-16 d-inline-flex align-items-center justify-content-center" fill="#111111" stroke="#111111" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg></a>
+        <h5 class="mb-15">Search products</h5>
+        <form action="#">
+          <div class="form-group">
+            <input class="form-control search-icon" type="text" placeholder="Enter keyword">
+          </div>
+        </form>
+        <div class="box-quick-search"><span class="text-17 neutral-medium-dark mr-5">Quick search:</span><a class="text-17" href="#">T-Shirt</a><a class="text-17" href="#">Jeans</a><a class="text-17" href="#">Mens</a></div>
+        <h5 class="mb-15 mt-30">Category</h5>
+        <form action="#">
+          <div class="form-group">
+            <select class="form-control arrow-select">
+              <option>All Categories</option>
+              <option>Animals & Pet Supplies</option>
+              <option>Baby & Toddler</option>
+              <option>Boys' Clothing</option>
+              <option>Baby Care</option>
+              <option>Safety Equipment</option>
+              <option>Activity & Gear</option>
+              <option>Baby Shoes</option>
+              <option>Children's Shoes</option>
+              <option>Family Outfits</option>
+              <option>Womens</option>
+            </select>
+          </div>
+        </form>
+        <div class="block-filter mt-30">
+          <h5 class="item-collapse">Price</h5>
+          <div class="box-collapse">
+            <div class="box-slider-range mt-20 mb-25">
+              <div class="row mb-20">
+                <div class="col-sm-12">
+                  <div id="slider-range-popup"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <label class="lb-slider font-sm neutral-500 mr-5">Price Range:</label><span class="min-value-money font-sm neutral-900"></span>
+                  <label class="lb-slider font-sm neutral-900"></label>-<span class="max-value-money font-sm neutral-900"></span>
+                </div>
+                <div class="col-lg-12">
+                  <input class="form-control min-value" type="hidden" name="min-value" value="">
+                  <input class="form-control max-value" type="hidden" name="max-value" value="">
+                </div>
+              </div>
+            </div>
+            <ul class="list-filter-checkbox">
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">$100 - $200</span><span class="checkmark"></span>
+                </label><span class="number-item">12</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">$200 - $400</span><span class="checkmark"></span>
+                </label><span class="number-item">24</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">$400 - $600</span><span class="checkmark"></span>
+                </label><span class="number-item">54</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">$600 - $800</span><span class="checkmark"></span>
+                </label><span class="number-item">78</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Over $1000</span><span class="checkmark"></span>
+                </label><span class="number-item">125</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="block-filter mt-30">
+          <h5 class="item-collapse">Size</h5>
+          <div class="box-collapse">
+            <div class="block-size">
+              <div class="list-sizes"><span class="item-size">XS</span><span class="item-size active">S</span><span class="item-size">M</span><span class="item-size">XL</span><span class="item-size">XXL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="block-filter mt-30">
+          <h5 class="item-collapse mb-5">Colors</h5>
+          <div class="box-collapse">
+            <ul class="list-color">
+              <li class="active"><span class="box-circle-color"><a class="color-red active" href="#"></a></span><span class="font-xs">Red</span></li>
+              <li><span class="box-circle-color"><a class="color-green" href="#"></a></span><span class="font-xs">Green</span></li>
+              <li><span class="box-circle-color"><a class="color-orange" href="#"></a></span><span class="font-xs">Orange</span></li>
+              <li><span class="box-circle-color"><a class="color-yellow" href="#"></a></span><span class="font-xs">Yellow</span></li>
+              <li><span class="box-circle-color"><a class="color-blue" href="#"></a></span><span class="font-xs">Blue</span></li>
+              <li><span class="box-circle-color"><a class="color-gray" href="#"></a></span><span class="font-xs">Gray</span></li>
+              <li><span class="box-circle-color"><a class="color-brown" href="#"></a></span><span class="font-xs">Brown</span></li>
+              <li><span class="box-circle-color"><a class="color-cyan" href="#"></a></span><span class="font-xs">Cyan</span></li>
+              <li><span class="box-circle-color"><a class="color-cyan-2" href="#"></a></span><span class="font-xs">Cyan 2</span></li>
+              <li><span class="box-circle-color"><a class="color-purple" href="#"></a></span><span class="font-xs">Purple</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block-filter mt-30">
+          <h5 class="item-collapse mb-15">Brand</h5>
+          <div class="box-collapse">
+            <ul class="list-filter-checkbox">
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Seraphine</span><span class="checkmark"></span>
+                </label><span class="number-item">136</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Monica + Andy</span><span class="checkmark"></span>
+                </label><span class="number-item">136</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Maisonette</span><span class="checkmark"></span>
+                </label><span class="number-item">136</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Pink Chicken</span><span class="checkmark"></span>
+                </label><span class="number-item">136</span>
+              </li>
+              <li>
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Hanna Andersson</span><span class="checkmark"></span>
+                </label><span class="number-item">136</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-popup-account">
+      <div class="box-account-overlay"></div>
+      <div class="box-account-wrapper"><a class="btn-close-popup btn-close-popup-account" href="#">
+          <svg class="icon-16 d-inline-flex align-items-center justify-content-center" fill="#111111" stroke="#111111" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg></a>
+        <div class="box-banner-popup"></div>
+        <div class="form-account-info"><a class="button-tab btn-for-login active" href="#">Login</a><a class="button-tab btn-for-signup" href="#">Sign up</a>
+          <div class="form-login">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="form-group"><a class="brand-1 font-sm buttun-forgotpass" href="#">Forgot your password?</a></div>
+            <div class="form-group">
+              <button class="btn btn-login d-block">Login</button>
+            </div>
+            <div class="form-group mt-100 text-center"><a class="font-sm" href="#">Privacy & Terms</a></div>
+          </div>
+          <div class="form-register">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label class="d-flex align-items-start">
+                <input class="cb-agree" type="checkbox"><span class="text-agree body-p2">Join for Free and start earning points today. Benefits include 15% off your first purchase,</span>
+              </label>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-login d-block">Create my account</button>
+            </div>
+            <div class="text-center">
+              <p class="body-p2 neutral-medium-dark">Already have an account?<a class="neutral-dark login-now" href="#">Login Now</a></p>
+            </div>
+            <div class="form-group mt-100 text-center"><a class="font-sm" href="#">Privacy & Terms</a></div>
+          </div>
+        </div>
+        <div class="form-password-info">
+          <h5>Recover password</h5>
+          <div class="form-login">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-login d-block">Recover</button>
+            </div>
+            <div class="text-center">
+              <p class="body-p2 neutral-medium-dark">Already have an account?<a class="neutral-dark login-now" href="#">Login Now</a></p>
+            </div>
+            <div class="form-group mt-100 text-center"><a class="font-sm" href="#">Privacy & Terms</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-popup-cart perfect-scrollbar">
+      <div class="box-cart-overlay"></div>
+      <div class="box-cart-wrapper"><a class="btn-close-popup" href="#">
+          <svg class="icon-16 d-inline-flex align-items-center justify-content-center" fill="#111111" stroke="#111111" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg></a>
+        <h5 class="mb-15 mt-50">Your Cart</h5>
+        <div class="list-product-4 mb-50">
+              <div class="cardProduct cardProduct4">
+                <div class="cardImage"><a href="product-single.html"><img src="assets/imgs/page/homepage1/product24.png" alt="kidify"></a></div>
+                <div class="cardInfo"><a href="product-single.html">
+                    <h6 class="font-md-bold cardTitle">Toddler Tutu Dress</h6></a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"></div>
+                  <div class="product-price-bottom">
+                    <p class="font-lg cardDesc">$185.00</p>
+                    <p class="font-lg neutral-500 cardPriceSale">$196.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardProduct cardProduct4">
+                <div class="cardImage"><a href="product-single.html"><img src="assets/imgs/page/homepage1/product25.png" alt="kidify"></a></div>
+                <div class="cardInfo"><a href="product-single.html">
+                    <h6 class="font-md-bold cardTitle">Baby Bear Hoodie</h6></a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"></div>
+                  <div class="product-price-bottom">
+                    <p class="font-lg cardDesc">$185.00</p>
+                    <p class="font-lg neutral-500 cardPriceSale">$196.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardProduct cardProduct4">
+                <div class="cardImage"><a href="product-single.html"><img src="assets/imgs/page/homepage1/product26.png" alt="kidify"></a></div>
+                <div class="cardInfo"><a href="product-single.html">
+                    <h6 class="font-md-bold cardTitle">Petite Pinafore Dress</h6></a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"><img src="assets/imgs/template/icons/star.svg" alt="kidify"></div>
+                  <div class="product-price-bottom">
+                    <p class="font-lg cardDesc">$185.00</p>
+                    <p class="font-lg neutral-500 cardPriceSale">$196.00</p>
+                  </div>
+                </div>
+              </div>
+        </div><a class="btn btn-brand-1-xl-bold w-100 font-md-bold" href="cart.html">View your cart
+          <svg class="icon-16 ml-5" fill="none" stroke="#ffffff" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg></a>
+      </div>
+    </div>
+    <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/waypoints.js"></script>
+    <script src="assets/js/vendors/wow.js"></script>
+    <script src="assets/js/vendors/magnific-popup.js"></script>
+    <script src="assets/js/vendors/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/vendors/select2.min.js"></script>
+    <script src="assets/js/vendors/isotope.js"></script>
+    <script src="assets/js/vendors/scrollup.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/noUISlider.js"></script>
+    <script src="assets/js/vendors/slider.js"></script>
+    <!-- Count down-->
+    <script src="assets/js/vendors/counterup.js"></script>
+    <script src="assets/js/vendors/jquery.countdown.min.js"></script>
+    <!-- Count down--><script src="assets/js/vendors/jquery.elevatezoom.js"></script>
+<script src="assets/js/vendors/slick.js"></script>
+<script src="assets/js/vendors/jquery-ui.js"></script>
+<script src="assets/js/vendors/jquery.timepicker.min.js"></script>
+<script src="assets/js/vendors/glightbox.min.js"></script>
+    <script src="assets/js/main.js?v=1.0.0"></script>
+  </body>
+</html>
