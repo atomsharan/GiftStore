@@ -449,6 +449,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 [⬆ Back to Top](#-giftstore---your-ultimate-gift-shopping-platform)
 
 </div>
-
- 
- 
